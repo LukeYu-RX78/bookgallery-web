@@ -33,7 +33,12 @@ export const BookListsPage = () => {
     }
 
     const EditBook = ( id ) => {
-        window.localStorage.setItem("bookId", id);
+        fetch( `http://localhost:8080/book/getById/${id}`)
+            .then(res=>res.json())
+            .then((result)=>{
+                window.localStorage.setItem("bookgallery-book", JSON.stringify(result));
+                window.location.reload(false);
+            })
         console.log("I need to jump to the book update page.");
     }
 
@@ -61,7 +66,7 @@ export const BookListsPage = () => {
                                         }} key="list-vertical-delete-o"/>,]}
                           extra={<img className="coverThumbnails" alt="book cover"  src={item.cover} />}>
                 <List.Item.Meta title={ item.name } description={ item.author }/>
-                <text className="bookIntro">{item.intro}</text>
+                <p className="bookIntro">{item.intro}</p>
         </List.Item>
         )
     }
