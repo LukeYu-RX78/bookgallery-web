@@ -28,9 +28,7 @@ Clicking delete would delete the book from the database and refresh the page.
 ![2381696561787_ pic](https://github.com/LukeYu-RX78/bookgallery-web/assets/116868785/052ecfd0-3cda-4dfa-a596-400bc9ae2512)  
 
 ###Book update page:  
-This page is still under construction, coming sooooooooon.  
 <sub>(after clicking the book's edit link, the website will record the book `id` route to the update page,  
-and this page would implement the update function and the add function with the input form)</sub>  
-![2391696561841_ pic](https://github.com/LukeYu-RX78/bookgallery-web/assets/116868785/a0615fb8-85bf-4d11-96f9-f74ac0d59b56)
-<sub>(the warning here is because Chrome is no more supporting the `<text/>` tag, I would use another tag to show the info later)</sub>
+user can edit the selected book info or upload a new book)</sub>  
+![image](https://github.com/LukeYu-RX78/bookgallery-web/assets/116868785/be98467d-c2ff-4702-bf9a-51c495aeeab1)
 
